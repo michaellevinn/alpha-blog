@@ -1,0 +1,15 @@
+<h1>New user</h1>
+
+<%= form_for @user do |uf| %>
+    <p>
+        <%= uf.label :name %><br/>
+        <%= uf.text_field :name %>
+    </p>
+    <p>
+        <%= uf.label :password %><br/>
+        <%= uf.password_field :password %>
+    </p>
+    <p>
+        <%= uf.submit %>
+    </p>
+<% end %>
