@@ -1,4 +1,7 @@
-<h1>Showing user by ID</h1>
+<h1>User information</h1>
 
 <p>User name: <%= @user.name %></p>
 <p>Password: <%= @user.password %> </p>
+<br/>
+<p><%= link_to 'Edit user', edit_user_path(@user) %></p>
+<p><%= link_to 'Back to list', users_path %></p>

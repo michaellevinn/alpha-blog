@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+#notice {
+  color: blue;
+}
+
+.msgBlock {
+  width: 100%;
+  background-color: green;
+  color: black;
+  font-weight: bold;
+}
+
+.errBlock {
+  width: 100%;
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}

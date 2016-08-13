@@ -1,0 +1,19 @@
+<h1>List of users in the system</h1>
+<%= link_to 'Add new user', new_user_path %>
+<table>
+  <tr>
+    <th width="100">ID</th>
+    <th width="100">Name</th>
+    <th width="100">Password</th>
+  </tr>
+  <% @users.each do |u| %>
+  <tr>
+    <td><%= u.id %></td>
+    <td><%= u.name %></td>
+    <td><%= u.password %></td>
+    <td><%= link_to 'Show', user_path(u) %></td>
+    <td><%= link_to 'Edit', edit_user_path(u) %></td>
+    <td><%= link_to 'Delete', user_path(u), method: :delete, data: {confirm: "Are you sure you want to delete this user?"} %></td>
+  <% end %>
+  </tr>
+</table>

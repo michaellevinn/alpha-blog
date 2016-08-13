@@ -1,0 +1,23 @@
+<div class="errBlock">
+    <% if @user.errors.any? %>
+        <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+        </ul>
+    <% end %>
+</div>
+
+<%= form_for @user do |uf| %>
+    <p>
+        <%= uf.label :name %><br/>
+        <%= uf.text_field :name %>
+    </p>
+    <p>
+        <%= uf.label :password %><br/>
+        <%= uf.text_field :password %>
+    </p>
+    <p>
+        <%= uf.submit %>
+    </p>
+<% end %>

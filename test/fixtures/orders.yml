@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-08-12
+  time: 2016-08-12 20:34:36
+  from: MyText
+  pax: 1
+  paid: false
+
+two:
+  date: 2016-08-12
+  time: 2016-08-12 20:34:36
+  from: MyText
+  pax: 1
+  paid: false
